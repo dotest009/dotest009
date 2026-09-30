@@ -7,6 +7,12 @@
 
 Mount Mega in Rclone- https://youtu.be/W6ftppM1HqA?si=wh9EzbHypHngciw1
 rclone listremotes
+rclone lsf mega:
+rclone lsd mega:
+rclone ls mega:
+rclone mount mega: M: --vfs-cache-mode writes --poll-interval 5s
+taskkill /IM rclone.exe /F
+
 
 
 
