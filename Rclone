@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+Mount Mega in Rclone- https://youtu.be/W6ftppM1HqA?si=wh9EzbHypHngciw1
+
+
+Rclone to Copy from OneDrive to Google Drive https://youtu.be/QhYKBgrqszI
+Rclone Mount as windows drive- https://youtu.be/HTFGMhw2JxU
+Download rclone
+Extract rclone using Winrar or 7zip
+Open the extracted file
+Double click the search bar at the top of your file explorer
+Type "cmd" and hit enter
+Type "rclone config" in the command prompt that opened
+Type "n" for a new remote
+Type in whatever name you want I used ex
+Hit enter on Client ID
+Hit enter on Client Secret
+Type "1" on Scope
+Hit enter on Root_Folder_ID
+Hit enter on edit advanced config
+Hit enter on Use auto config
+Chose your Google account
+Press Allow (rclone is safe do not worry)
+If you are using a shared drive like I am then type "y" if no type "n"
+Then type the number corresponding with the drive you want to select (I chose 3 which is the drive named z2 on my account)
+Press enter on the Is this ok?
+
+Mount in windows(install winfsp)(https://youtu.be/QPqN1SXixQg)
+config=C:\Users\Musafir\AppData\Roaming\rclone\rclone.conf
+>rclone mount onedrive1TB: O: --network-mode 
+or
+>rclone mount --vfs-cache-mode full onedrive1TB:/ O:
+mount drive as task scheduler- https://youtu.be/QPqN1SXixQg
+
+mount in linux(https://youtu.be/f8K-V3HHDA0)
+>rclone mount --daemon gdrive: /home/bob/gdrive or whatever name it is
+
+Install RClone in MacOS- https://youtu.be/xfRjo2q0xkw
+Excute in terminal:-
+sudo chmod +x rclone
+./rclone config
+
+location of rclone.conf file in macosx-
+/users/boostupstation/.config/rclone/rclone.conf
+
+
+
+Install RClone in Android- https://youtu.be/OcMq31p3FSU
+Termux link on PlayStore:- https://play.google.com/store/apps/de...
+
+Commands used in the video:-
+cd /sdcard
+ls
+pkg install rclone
+rclone config
+cp /data/data/com.termux/files/home/.config/rclone/rclone.conf /sdcard
+cd /sdcard
+ls
+
+
+
+Sync 2 Google Drives Using RClone - https://youtu.be/BgD5b2MExeE
+Download rclone
+Extract rclone using Winrar or 7zip
+Open the extracted file
+Double click the search bar at the top of your file explorer
+Type "cmd" and hit enter
+Type "rclone config" in the command prompt that opened
+Type "n" for a new remote
+Type in whatever name you want I used ex
+Hit enter on Client ID
+Hit enter on Client Secret
+Type "1" on Scope
+Hit enter on Root_Folder_ID
+Hit enter on edit advanced config
+Hit enter on Use auto config
+Chose your Google account
+Press Allow (rclone is safe do not worry)
+If you are using a shared drive like I am then type "y" if no type "n"
+Then type the number corresponding with the drive you want to select (I chose 3 which is the drive named z2 on my account)
+Press enter on the Is this ok?
+
+Do the same thing again.
+
+After you are done with that you can press Q and type in "rclone sync (name of ur remote mine was ex): (name of your second remote): 
+it should look something like rclone sync ex: ex2:
+Then hit enter and wait for the list to update
+Go check your drives and they should have synced :)
+
